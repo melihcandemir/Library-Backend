@@ -4,8 +4,7 @@ services:
     build: .
     ports:
       - "8080:8080"
-    depends_on:
-      - postgres
+    # Harici PostgreSQL kullanıldığı için depends_on kaldırıldı
     environment:
       DBURL: ${DBURL}
       DBNAME: ${DBNAME}
