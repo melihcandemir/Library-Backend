@@ -6,10 +6,10 @@ services:
       - "8080:8080"
     # Harici PostgreSQL kullanıldığı için depends_on kaldırıldı
     environment:
-      DBURL: ${DBURL}
-      DBNAME: ${DBNAME}
-      DBUSERNAME: ${DBUSERNAME}
-      DBPASSWORD: ${DBPASSWORD}
+      DBURL: "dpg-d1r0596r433s739n535g-a.oregon-postgres.render.com:5432"
+      DBNAME: "libraryapp_nnph"
+      DBUSERNAME: "libraryapp_nnph_user"
+      DBPASSWORD: "PzFnIciIus4i3nmErXVvoIxNuQVURVDg"
 
   # postgres:
   #   image: postgres
