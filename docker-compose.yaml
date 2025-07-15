@@ -7,16 +7,16 @@ services:
     depends_on:
       - postgres
     environment:
-      DBURL: postgres:5432
-      DBNAME: library-app
-      DBUSERNAME: postgres
-      DBPASSWORD: postgres
+      DBURL: dpg-d1r0596r433s739n535g-a.oregon-postgres.render.com
+      DBNAME: libraryapp_nnph
+      DBUSERNAME: libraryapp_nnph_user
+      DBPASSWORD: PzFnIciIus4i3nmErXVvoIxNuQVURVDg
 
   postgres:
     image: postgres
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: library-app
+      POSTGRES_USER: libraryapp_nnph_user
+      POSTGRES_PASSWORD: PzFnIciIus4i3nmErXVvoIxNuQVURVDg
+      POSTGRES_DB: libraryapp_nnph
